@@ -69,3 +69,15 @@ This mapping is contextual only. The EICAR file was harmless, intentionally crea
 - PowerShell use
 - Incident classification
 - SOC investigation documentation
+- ## Follow-Up Verification — September 13, 2026
+PowerShell checks confirmed:
+- Defender running mode: Normal
+- Antivirus enabled: True
+- Real-time protection enabled: True
+- EICAR detection ActionSuccess: True
+- EICAR IsActive: False
+- EICAR DidThreatExecute: False
+Event ID 1117 recorded quarantine of the EICAR test file with error code 0x00000000 and the status “No additional actions required.”
+These results support successful handling of the authorized antivirus test. They do not establish that the entire device is free of unrelated threats.
+## Lab Scope
+This lab used Microsoft Defender Antivirus, Windows Security, and local Windows event logs. It demonstrates endpoint antivirus alert triage and response verification. It did not use Microsoft Defender for Endpoint’s enterprise EDR capabilities, device isolation, or advanced hunting.
